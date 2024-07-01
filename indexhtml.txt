@@ -1,0 +1,89 @@
+<link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu-cheese.css' rel='stylesheet'>
+
+<style>
+
+/* responsive krna */
+  /* site ko har screen size per propelrly adjust krna */
+
+  /* conditional CSS */
+/* media query means CSS ko screen kay size kay hisaab se control krna */
+
+@media print {
+  
+  header{
+    background-color: green !important;
+  }
+
+}
+/* range bhi define karden 800       aur        1000 kay between ki CSS */
+@media screen and (min-width:800px) and (max-width:1000px) {
+  
+  header{
+    background-color: aqua !important;
+  }
+
+}
+
+/* agar screeen ka size maximum 800 tak h to yeh CSS apply 
+karo */
+/* 800px se kum per yeh CSS run karo */
+/* @media screen and (max-width:800px) {
+
+    header{
+      background-color: azure !important;
+    }
+
+  .d-menu{
+    display: none;
+  }
+
+  .m-menu{
+    display: block !important;
+  }
+
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.m-menu{
+  display: none ;
+}
+
+  ol{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+  }
+  header{
+    background-color: bisque;
+  }
+
+  li{
+    line-height: 60px;
+    flex-grow: 1;
+  }
+
+  li:nth-child(1){
+    flex-grow: 6;
+  }
+
+</style>
+
+<header>
+  <ol>
+    <li></li>
+    <li class="d-menu">Home</li>
+    <li class="d-menu">Contact</li>
+    <li class="d-menu">Login</li>
+    <li class="d-menu">Dashboard</li>
+    <li class="d-menu">About Us</li>
+
+    <li class="m-menu">
+      <!-- <i class="gg-menu-cheese"></i> -->
+---
+    </li>
+  </ol>
+</header>
